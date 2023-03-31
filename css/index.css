@@ -1,0 +1,480 @@
+@font-face {
+    font-family: 'SuseongDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html,body{
+    font-size: 16px;
+}
+.main{
+    position: relative;
+    top: 0; left: 0;
+    width: 100%; height: 940px;
+}
+.main> .menu{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 60px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.main> .menu> div{
+    width: 7%; height:60px;
+    line-height: 60px;
+    font-family: 'SuseongDotum';
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+.main> .menu:hover{
+    height: 260px;
+    background: white;
+}
+.main> .menu> .logo{
+    font-size: 1.3rem;
+    margin-left: 30%;
+    margin-right: 4%;
+}
+.main> .menu> .logo> span{
+    font-size: 2.1rem;
+}
+.main> .menu:hover div{
+    color: black;
+}
+.main> .menu:hover .logo{
+    color: rgb(190, 33, 33);
+}
+.main> .menu> .sub{
+    width: 30%; height: 200px;
+    margin-left: 40%;
+    font-size: 1rem;
+    display: flex;
+}
+.main> .menu> .sub> div{
+    width: 20%;
+    height: 100%;
+}
+.main> .menu> .sub> div> p{
+    text-align: center;
+    height: 40px;
+}
+.main> .menu> .sub> .menu{
+    margin-left: 1%;
+}
+.main> .menu> .sub> .store{
+    margin-left: 3.7%;
+}
+.main> .menu> .sub> .commu{
+    margin-left: 7%;
+}
+.main> .menu> .sub> div:hover{
+    background: #F7F4F1;
+}
+.main> .menu> .sub> div> p:hover {
+    border-bottom: 3px solid #B7162F;
+}
+.main> .bigImg{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%; height: 100%;
+}
+.main> .bigImg> img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.bar{
+    position: fixed;
+    top: 900px; left: 0;
+    z-index: 1;
+    width: 100%; height: 130px;
+    background: #B7162F;
+    cursor: pointer;
+    display: flex;
+}
+.bar> p{
+    width: 13%; height: 100%;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 120px;
+}
+.bar> p:first-child{
+    width: 3%;
+    margin-left: 43%;
+}
+.bar> p:last-child{
+    font-size: 3rem;
+    line-height: 107px;
+}
+.two{
+    width: 100%; height: 700px;
+    display: flex;
+}
+.two> .new{
+    width: 50%; height: 100%;
+    background: url(../img/new.gif);
+    background-size:97% 90%;
+}
+.two> .new> .open{
+    width: 30%; height: 60px;
+    margin-top: 100px;
+    margin-left: 40%;
+    display: flex;
+}
+.two> .new> .open> p{
+    width: 17%;
+    color: white;
+}
+.two> .new> .open> p> img,
+.two> .store> .search> p> img
+{
+    width: 70%; height: 70%;
+} 
+.two> .new> .open> p:last-child{
+    width: 70%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+.two> .new> p:nth-child(2){
+    font-size: 4.9rem;
+    color: white;
+    margin-left: 40%;
+}
+.two> .new> p:nth-child(2)> span,
+.two> .store> p:nth-child(2)> span{
+    font-weight: bold;
+}
+.two> .new> .button{
+    width: 40%; height: 80px;
+    background: black;
+    color: white;
+    font-size: 1.6rem;
+    text-indent:20px;
+    line-height: 80px;
+    margin-top: 30px;
+    margin-left: 40%;
+    cursor: pointer;
+}
+.two> .store{
+    width: 50%; height: 100%;
+    background: url(../img/stbg.gif);
+    background-size:130% 100%;
+}
+.two> .store> .search{
+    width: 30%; height: 60px;
+    margin-top: 100px;
+    margin-left: 7%;
+    display: flex;
+}
+.two> .store> .search> p,
+.mobile> .coupon> .gift> p,
+.community> .sns> p{
+    width: 17%; 
+}
+.two> .store> .search> p:last-child,
+.today> .jaws> p:last-child,
+.mobile> .coupon> .gift> p:last-child,
+.community> .sns> p:last-child{
+    width: 80%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+.two> .store> p:nth-child(2){
+    font-size: 4.9rem;
+    margin-left: 7%;
+    color: #B7162F;
+}
+.two> .store> .text{
+    width: 40%; height: 70px;
+    margin-left: 7%;
+    display: flex;
+}
+.two> .store> .text> input{
+    width: 100%; height: 100%;
+    border: 6px solid #B7162F;
+    margin-top: 30px;
+}
+.two> .store> .text> input::placeholder{
+    color: #B7162F;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-indent: 20px;
+}
+.two> .store> .text> p {
+    width: 20%; height: 70px;
+    font-size: 3rem;
+    line-height: 70px;
+    margin-top: 30px;
+    margin-left: 6%;
+    cursor: pointer;
+    color: #B7162F;
+}
+.today{
+    width: 100%; height: 700px;
+    border: 1px solid white;
+    background: url(../img/menu.jpg);
+    background-size: 100% 100%;
+}
+.today> .jaws{
+    width: 30%; height: 60px;
+    margin-top: 100px;
+    margin-left: 20%;
+    display: flex;
+}
+.today> .jaws> p{
+    width: 10%;
+}
+.today> p:nth-child(2){
+    margin-left: 20%;
+    font-size: 4.9rem;
+    color: #B7162F;
+}
+.today> p:nth-child(2)> span{
+    font-weight: bold;   
+}
+.today> .bnt {
+    width: 20%; height: 80px;
+    background: #B7162F;
+    color: white;
+    margin-left: 20%;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    text-indent:20px;
+    line-height: 80px;
+    cursor: pointer;
+}
+.mobile{
+    width: 100%; height: 700px;
+    display: flex;
+}
+.mobile> .img{
+    width: 40%; height: 470px;
+    margin-top: 100px;
+}
+.mobile> .img> img{
+    width: 100%; height: 100%;
+}
+.mobile> .coupon{
+    width: 60%; height: 100%;   
+}
+.mobile> .coupon> .gift{
+    width: 30%; height: 60px;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 120px;
+}
+.mobile> .coupon> p:nth-child(2),
+.mobile> .coupon> p:nth-child(3) {
+    width: 43%;
+    margin-left: 30%;
+    font-size: 4.9rem;
+    text-align: right;
+}
+.mobile> .coupon> p:nth-child(2)> span{
+    color: #B7162F;
+}
+.mobile> .coupon> p:nth-child(3){
+    font-weight: bold;
+}
+.community{
+    width: 100%; height: 1000px;
+    background: #F2F2F5;
+    border-top: 1px solid #F2F2F5;
+}
+.community> .sns{
+    width: 20%; height: 60px;
+    margin-left: 20%;
+    margin-top: 100px;
+    display: flex;
+}
+.community> p:nth-child(2){
+    width: 70%;
+    font-size: 4.9rem;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.community> p:nth-child(2)> span{
+    font-weight: bold;
+}
+.community> .list{
+    width: 96%; height: 600px;
+    margin-top: 40px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.community> .list> div{
+    width: 18%; height: 100%;
+    background: white;
+}
+.community> .list> div> .icon{
+    width: 80%; height: 40px;
+    margin-left: 10%;
+    margin-top: 20px;
+    display: flex;
+}
+.community> .list> div> .icon> p{
+    width: 13%;
+}
+.community> .list> div> .icon> p:last-child{
+    width: 20%;
+    font-weight: 600;
+    margin-top: 4px;
+}
+.community> .list> div> p:nth-child(2){
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.community> .list> div> div:nth-child(3){
+    width: 86%; height: 300px;
+    margin-top: 60px; 
+    margin-left: 7%;
+}
+.community> .list> div> div:nth-child(3)> img{
+    width: 100%; height: 100%;
+}
+.community> .list> div:hover{
+    cursor: pointer;
+    background: #B7162F;
+    color: white;
+}
+.people{
+    width: 100%; height: 700px;
+    background: url(../img/people.gif);
+    background-size: 100% 100%;
+    display: flex;
+}
+.people> div{
+    width: 50%; height: 100%;
+}
+.people> .first{
+    position: relative;
+    top: 0; left: 0;
+}
+.people> .first> .brown{
+    width: 48%; height: 300px;
+    background: #B79C8B;
+    margin-left: 42%;
+    margin-top: 180px;
+}
+.people> .first> div:nth-child(2){
+    position: absolute;
+    top: 100px; left: 36%;
+    z-index: 0;
+    width: 53%; height: 370px;
+}
+.people> .first> div:nth-child(2)> img{
+    width: 100%; height: 100%;
+}
+.people> .first> p:nth-child(3){
+    width: 30%; 
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 42%;
+}
+.people> .first> p:nth-child(4){
+    width: 30%;
+    font-weight: 600; 
+    margin-top: 10px;
+    margin-left: 42%;
+}
+.people> .second> .emotion{
+   width: 30%; height: 40px; 
+   margin-left: 38%;
+   margin-top: 100px;
+   display: flex;
+}
+.people> .second> .emotion> p{
+    width: 16%;
+}
+.people> .second> .emotion> p:last-child{
+    width: 70%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.people> .second> p{
+    width: 60%;
+    text-align: right;
+    margin-top: 60px;
+    font-size: 4.9rem;
+}
+.people> .second> p> span{
+    font-weight: bold;
+}
+.footer{
+    width: 100%; height: 400px;
+    background: #282828;
+    display: flex;
+}
+.footer> .food{
+    width: 30%; height: 200px;
+    margin-top: 60px;
+    margin-left: 20%;
+}
+.footer> .food> div{
+    width: 37%; height: 30px;
+}
+.footer> .food> div> img{
+    width: 100%; height: 100%;
+}
+.footer> .food> p{
+    width: 100%;
+    margin-top: 30px;
+    color: #F4EFEC;
+}
+.footer> .call{
+    width: 30%; height: 200px;
+    margin-top: 60px;
+    margin-left: 10%;
+}
+.footer> .call> div{
+    width: 70%; height: 30px;
+    display: flex;
+}
+.footer> .call> div> p{
+    width: 20%; height: 100%;
+    text-align: center;
+    color: white;
+}
+.footer> .call> div> p:nth-child(2){
+    width: 30%;
+}
+.footer> .call> .sound{
+    width: 70%; height: 160px;
+    display: flex;
+    margin-top: 20px;
+}
+.footer> .call> .sound> .emoticon{
+    width: 20%;
+}
+.footer> .call> .sound> div:last-child> .span{
+    height: 30px;
+    font-weight: bold;
+    color: #B7162F;
+}
+.footer> .call> .sound> div:last-child> p:nth-child(2){
+    height: 60px;
+    color: #F4EFEC;
+}
