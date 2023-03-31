@@ -100,7 +100,7 @@ html,body{
 }
 .bar{
     position: fixed;
-    top: 890px; left: 0;
+    top: 800px; left: 0;
     z-index: 1;
     width: 100%; height: 130px;
     background: #B7162F;
@@ -402,7 +402,7 @@ html,body{
 }
 .people> .second> .emotion{
    width: 30%; height: 40px; 
-   margin-left: 38%;
+   margin-left: 42%;
    margin-top: 100px;
    display: flex;
 }
@@ -415,9 +415,9 @@ html,body{
     font-weight: bold;
 }
 .people> .second> p{
-    width: 60%;
+    width: 70%;
     text-align: right;
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 4.9rem;
 }
 .people> .second> p> span{
@@ -444,37 +444,38 @@ html,body{
     margin-top: 30px;
     color: #F4EFEC;
 }
-.footer> .call{
-    width: 30%; height: 200px;
+.footer> .foot{
+    width: 40%; height: 200px;
     margin-top: 60px;
-    margin-left: 10%;
+    margin-left: 6%;
 }
-.footer> .call> div{
+.footer> .foot> div{
     width: 70%; height: 30px;
     display: flex;
 }
-.footer> .call> div> p{
+.footer> .foot> div> p{
     width: 20%; height: 100%;
     text-align: center;
     color: white;
 }
-.footer> .call> div> p:nth-child(2){
+.footer> .foot> div> p:nth-child(2){
     width: 30%;
 }
-.footer> .call> .sound{
+.footer> .foot> .sound{
     width: 70%; height: 160px;
     display: flex;
     margin-top: 20px;
 }
-.footer> .call> .sound> .emoticon{
+.footer> .foot> .sound> .emoticon{
     width: 20%;
+    margin-left: 6%;
 }
-.footer> .call> .sound> div:last-child> .span{
+.footer> .foot> .sound> div:last-child> .span{
     height: 30px;
     font-weight: bold;
     color: #B7162F;
 }
-.footer> .call> .sound> div:last-child> p:nth-child(2){
+.footer> .foot> .sound> div:last-child> p:nth-child(2){
     height: 60px;
     color: #F4EFEC;
 }
