@@ -276,17 +276,20 @@ html,body{
     width: 60%; height: 100%;   
 }
 .mobile> .coupon> .gift{
-    width: 30%; height: 60px;
+    width: 40%; height: 60px;
     display: flex;
     margin-left: 40%;
     margin-top: 120px;
 }
 .mobile> .coupon> p:nth-child(2),
 .mobile> .coupon> p:nth-child(3) {
-    width: 43%;
+    width: 46%;
     margin-left: 30%;
     font-size: 4.9rem;
     text-align: right;
+}
+.mobile> .coupon> p:nth-child(2){
+    margin-top: 30px;
 }
 .mobile> .coupon> p:nth-child(2)> span{
     color: #B7162F;
