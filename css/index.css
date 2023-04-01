@@ -4,18 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-/* @font-face {
-    font-family: 'KCCChassam';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-} */
-@font-face {
-    font-family: 'locus_sangsang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 *{
     padding: 0;
     margin: 0;
@@ -119,7 +107,7 @@ html,body{
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 120px;
-    font-family: 'locus_sangsang';
+    font-family: '고딕';
 }
 .bar> p:first-child{
     width: 3%;
@@ -132,6 +120,7 @@ html,body{
 .two{
     width: 100%; height: 700px;
     display: flex;
+    font-family: '고딕';
 }
 .two> .new{
     width: 50%; height: 100%;
@@ -147,7 +136,6 @@ html,body{
 .two> .new> .open> p{
     width: 17%;
     color: white;
-    font-family: 'locus_sangsang';
 }
 .two> .new> .open> p> img,
 .two> .store> .search> p> img
@@ -164,7 +152,6 @@ html,body{
     font-size: 4.9rem;
     color: white;
     margin-left: 40%;
-    font-family: 'locus_sangsang';
 }
 .two> .new> p:nth-child(2)> span,
 .two> .store> p:nth-child(2)> span{
@@ -180,13 +167,11 @@ html,body{
     margin-top: 30px;
     margin-left: 40%;
     cursor: pointer;
-    font-family: 'locus_sangsang';
 }
 .two> .store{
     width: 50%; height: 100%;
     background: url(../img/stbg.gif);
     background-size:130% 100%;
-    font-family: 'locus_sangsang';
 }
 .two> .store> .search{
     width: 30%; height: 60px;
@@ -243,7 +228,7 @@ html,body{
     border: 1px solid white;
     background: url(../img/menu.jpg);
     background-size: 100% 100%;
-    font-family: 'locus_sangsang';
+    font-family: '고딕';
 }
 .today> .jaws{
     width: 30%; height: 60px;
@@ -276,7 +261,7 @@ html,body{
 .mobile{
     width: 100%; height: 700px;
     display: flex;
-    font-family: 'locus_sangsang';
+    font-family: '고딕';
 }
 .mobile> .img{
     width: 40%; height: 470px;
@@ -314,7 +299,7 @@ html,body{
     width: 100%; height: 1000px;
     background: #F2F2F5;
     border-top: 1px solid #F2F2F5;
-    font-family: 'locus_sangsang';
+    font-family: '고딕';
 }
 .community> .sns{
     width: 20%; height: 60px;
@@ -381,7 +366,7 @@ html,body{
     background: url(../img/people.gif);
     background-size: 100% 100%;
     display: flex;
-    font-family: 'locus_sangsang';
+    font-family: '고딕';
 }
 .people> div{
     width: 50%; height: 100%;
